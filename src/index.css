@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  background-color: #020617; /* Deep Slate */
+  color: #f8fafc;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+@keyframes liveDotPulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+.system-live-dot {
+  animation: liveDotPulse 1.8s ease-in-out infinite;
+}
